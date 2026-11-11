@@ -1,0 +1,25 @@
+{
+  "name": "whatsdesktop",
+  "version": "1.0.0",
+  "description": "WhatsApp Desktop independente",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "br.hub.whatsdesktop",
+    "productName": "WhatsDesktop",
+    "directories": {
+      "buildResources": "."
+    },
+    "win": {
+      "icon": "whatsapp.ico",
+      "target": "nsis"
+    }
+  }
+}
